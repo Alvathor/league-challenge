@@ -14,7 +14,6 @@ extension PostView {
         @Published var posts: [Post]
         private let postService: PostServiceProtocol
         private let userService: UserServiceProtocol
-        private var cancellables: Set<AnyCancellable> = []
         
         init(
             postService: PostServiceProtocol,
@@ -24,42 +23,18 @@ extension PostView {
             self.postService = postService
             self.userService = userService
         }
-        
-        // Runs in main thread
-        public func loadPosts(from user: User) async {
-            postService
-                .getPosts(from: user)
-                .receive(on: DispatchQueue.main)
-                .sink(receiveCompletion: { completion in
-                    switch completion {
-                    case .finished: print("[POSTS]:Finished")
-                    case .failure(let error): print("[POSTS]:", error)
-                    }
-                }, receiveValue: { posts in
-                    let postsWithUser = posts.map { $0.append(user: user) }
-                    self.posts += postsWithUser
-                })
-                .store(in: &cancellables)
-        }
-        
+
         // Runs in background
-        public func loadUsers() {
-            userService
+        public func loadUsers() async throws {
+            let _ = try await userService
                 .getUsers()
-                .receive(on: DispatchQueue.global(qos: .background))
-                .sink(receiveCompletion: { completion in
-                    switch completion {
-                    case .finished: print("[USERS]:Finished")
-                    case .failure(let error): print("[USERS]:", error)
+                .async().concurrentMap { user in
+                    let posts = try await self.postService.getPosts(from: user).async()
+                    await MainActor.run {
+                        self.posts +=  posts.map { $0.append(user: user) }
                     }
-                }, receiveValue: { users in
-                    Task { [weak self] in
-                        for user in users {
-                            await self?.loadPosts(from: user)
-                        }
-                    }
-                })
-                .store(in: &cancellables)
+                }
+
         }
     }
 }

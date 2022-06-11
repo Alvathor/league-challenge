@@ -33,6 +33,6 @@ public struct AuthenticationView: View {
                 Text("Error: \(error.localizedDescription)")
             }
         }
-        .onAppear(perform: viewModel.authentication)
+        .onAppear{  Task { try await viewModel.authentication() } }
     }
 }

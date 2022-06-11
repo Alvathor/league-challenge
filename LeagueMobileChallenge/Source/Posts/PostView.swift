@@ -31,7 +31,7 @@ public struct PostView: View {
         .edgesIgnoringSafeArea([.trailing, .bottom, .leading])
         .listStyle(PlainListStyle())
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear(perform: viewModel.loadUsers)
+        .onAppear { Task { try await viewModel.loadUsers() }}
         .navigationTitle("Posts")
     }
 }

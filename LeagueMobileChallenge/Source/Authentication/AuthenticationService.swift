@@ -15,7 +15,7 @@ public class AuthenticationService: AuthenticationServiceProtocol {
     
     public func authentication() -> AnyPublisher<Authentication, Error> {
         let url = URL(string: loginAPI)!
-        
+
         return Deferred {
             Future { promise in
                 self.networkService

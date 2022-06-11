@@ -26,21 +26,15 @@ extension AuthenticationView {
             self.authService = authService
         }
         
-        public func authentication() {
-            authService
-                .authentication()
-                .receive(on: DispatchQueue.main)
-                .sink(receiveCompletion: { [weak self] completion in
-                    switch completion {
-                    case .finished: print("[AUTH]:finished")
-                    case .failure(let error):
-                        print("[AUTH]:", error)
-                        self?.state = .failure(error)
-                    }
-                }, receiveValue: { [weak self] auth in
-                    self?.register(auth: auth)
-                })
-                .store(in: &cancellables)
+        public func authentication() async throws {
+            do {
+                let auth = try await authService.authentication().async()
+                await MainActor.run {
+                    register(auth: auth)
+                }
+            } catch {
+                debugPrint(error.localizedDescription)
+            }
         }
         
         private func register(auth: Authentication) {

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0CACC0BF-DA2D-4813-9FB4-510457B0107E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DA0AB65-002E-4322-8A06-746C542436FE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeagueMobileChallenge/Source/Authentication/AuthenticationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "ViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA284794-BF69-4878-8252-A4921F0D691E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeagueMobileChallenge/Source/Users/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DA284794-BF69-4878-8252-A4921F0D691E - 29fd9f6df9dcfb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Combine.Future&lt;Swift.Array&lt;LeagueMobileChallenge.User&gt;, Swift.Error&gt; in LeagueMobileChallenge.UserService.getUsers() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;LeagueMobileChallenge.User&gt;, Swift.Error&gt;"
+                  moduleName = "LeagueMobileChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/julianoalvarenga/Documents/GitHub/league-challenge/LeagueMobileChallenge/Source/Users/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "DA284794-BF69-4878-8252-A4921F0D691E - 335b5de1e84861e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((Swift.Result&lt;Swift.Array&lt;LeagueMobileChallenge.User&gt;, Swift.Error&gt;) -&gt; ()) -&gt; () in closure #1 () -&gt; Combine.Future&lt;Swift.Array&lt;LeagueMobileChallenge.User&gt;, Swift.Error&gt; in LeagueMobileChallenge.UserService.getUsers() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;LeagueMobileChallenge.User&gt;, Swift.Error&gt;"
+                  moduleName = "LeagueMobileChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/julianoalvarenga/Documents/GitHub/league-challenge/LeagueMobileChallenge/Source/Users/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
