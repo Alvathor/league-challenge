@@ -11,4 +11,3 @@ import Combine
 public protocol UserServiceProtocol: Service {
     func getUsers() -> AnyPublisher<[User], Error>
 }
-

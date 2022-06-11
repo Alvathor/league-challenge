@@ -20,9 +20,10 @@ public struct PostView: View {
     
     public var body: some View {
         List(viewModel.posts) { post in
-            VStack(alignment: .leading) {
+            LazyVStack(alignment: .leading) {
                 PostHeader(user: post.user)
                 PostBody(post: post)
+                Spacer()
             }
         }
         .id(UUID())
@@ -47,7 +48,7 @@ struct PostHeader: View {
                 Text(user.username)
                     .font(.headingMedium())
             } else {
-                Text("No User Found")
+                Text("User Not Found")
                     .font(.headingMedium())
             }
         }
@@ -60,8 +61,7 @@ struct PostBody: View {
     public var body: some View {
         Text(post.title)
             .font(.headingMedium())
-            .padding([.top, .bottom], 2)
-        
+            .padding(.bottom, 2)
         Text(post.description)
             .font(.bodyRegular())
     }

@@ -15,29 +15,29 @@ let avatar = User.Avatar(
     thumbnail: URL(string: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png")
 )
 
-var posts = [
-    Post(
+var posts: [Int: Post] = [
+    1: Post(
         id: 1,
         userId: 1,
         user: User(id: 1, avatar: avatar, username: "Clementine Bauche"),
         title: "a quo dolor cumque",
         description: "alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi "
     ),
-    Post(
+    2: Post(
         id: 2,
         userId: 2,
         user: User(id: 2, avatar: avatar, username: "Clementine Bauche"),
         title: "a quo dolor cumque",
         description: "alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi "
     ),
-    Post(
+    3: Post(
         id: 3,
         userId: 3,
         user: User(id: 3, avatar: avatar, username: "Clementine Bauche"),
         title: "a quo dolor cumque",
         description: "alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi alias dolor cume impedit blandi "
     ),
-    Post(
+    4: Post(
         id: 4,
         userId: 4,
         user: User(id: 4, avatar: avatar, username: "Clementine Bauche"),
@@ -46,24 +46,28 @@ var posts = [
     )
 ]
 
-var users: [Int: User] = [
-    1: User(id: 1, avatar: avatar, username: "Clementine Bauche"),
-    2: User(id: 2, avatar: avatar, username: "Clementine Bauche"),
-    3: User(id: 3, avatar: avatar, username: "Clementine Bauche"),
-    4: User(id: 4, avatar: avatar, username: "Clementine Bauche"),
+var users = [
+    User(id: 1, avatar: avatar, username: "Clementine Bauche"),
+    User(id: 2, avatar: avatar, username: "Mary Jane"),
+    User(id: 3, avatar: avatar, username: "Lois Lane"),
+    User(id: 4, avatar: avatar, username: "Clack Kent"),
 ]
 
 class MockedPostService: PostServiceProtocol {
     func getPosts(from user: User) -> AnyPublisher<[Post], Error> {
-        return Just(posts.map { Post(id: $0.id, userId: $0.userId, user: users[$0.id], title: $0.title, description: $0.description) })
-            .setFailureType(to: Error.self)
-            .eraseToAnyPublisher()
+        return Just(
+            posts
+                .filter {$0.value.userId == user.id }
+                .map { $0.value.append(user: user) }
+        )
+        .setFailureType(to: Error.self)
+        .eraseToAnyPublisher()
     }
 }
 
 class MockedUserService: UserServiceProtocol {
     func getUsers() -> AnyPublisher<[User], Error> {
-        return Just(users.map { $0.value })
+        return Just(users)
             .setFailureType(to: Error.self)
             .eraseToAnyPublisher()
     }

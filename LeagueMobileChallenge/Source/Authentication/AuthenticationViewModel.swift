@@ -30,8 +30,8 @@ extension AuthenticationView {
             authService
                 .authentication()
                 .receive(on: DispatchQueue.main)
-                .sink(receiveCompletion: { [weak self] result in
-                    switch result {
+                .sink(receiveCompletion: { [weak self] completion in
+                    switch completion {
                     case .finished: print("[AUTH]:finished")
                     case .failure(let error):
                         print("[AUTH]:", error)

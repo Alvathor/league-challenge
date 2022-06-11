@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A864FF656992546AD7C544F /* Pods_LeagueMobileChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E973EA07DC680BB29B1002A /* Pods_LeagueMobileChallengeTests.framework */; };
 		595D5CAD2853A839008E33AB /* CallbackNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D5CA22853A839008E33AB /* CallbackNetworkLayer.swift */; };
 		595D5CAE2853A839008E33AB /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D5CA32853A839008E33AB /* PostService.swift */; };
 		595D5CAF2853A839008E33AB /* MockServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D5CA42853A839008E33AB /* MockServices.swift */; };
@@ -28,15 +27,12 @@
 		595D5CCE2854AF08008E33AB /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D5CCD2854AF08008E33AB /* Authentication.swift */; };
 		595D5CD22854BB4B008E33AB /* AuthenticationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D5CD12854BB4B008E33AB /* AuthenticationDependencies.swift */; };
 		595D5CD42854C0B2008E33AB /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D5CD32854C0B2008E33AB /* AuthenticationViewModel.swift */; };
-		5BD7C54FA60BB7570A693C71 /* Pods_LeagueMobileChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09417A2435F74B6BBD872D0B /* Pods_LeagueMobileChallengeUITests.framework */; };
+		59A959F02854C9BD00F5F898 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 59A959EF2854C9BD00F5F898 /* CachedAsyncImage */; };
 		B6AC694F21E6578D0094A9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC694E21E6578D0094A9B1 /* AppDelegate.swift */; };
-		B6AC695421E6578D0094A9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695221E6578D0094A9B1 /* Main.storyboard */; };
 		B6AC695921E6578F0094A9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695821E6578F0094A9B1 /* Assets.xcassets */; };
 		B6AC695C21E6578F0094A9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC695A21E6578F0094A9B1 /* LaunchScreen.storyboard */; };
 		B6AC696721E6578F0094A9B1 /* LeagueMobileChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC696621E6578F0094A9B1 /* LeagueMobileChallengeTests.swift */; };
 		B6AC697221E6578F0094A9B1 /* LeagueMobileChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC697121E6578F0094A9B1 /* LeagueMobileChallengeUITests.swift */; };
-		B6AC69A221ECEC740094A9B1 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC69A121ECEC740094A9B1 /* APIController.swift */; };
-		C711E601661AAB36D173F831 /* Pods_LeagueMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EC5EC130097654F1E0F3C6 /* Pods_LeagueMobileChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02F12A77B173DEFEAE495835 /* Pods-LeagueMobileChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallengeUITests/Pods-LeagueMobileChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		07D03E3F1912927AD466BF81 /* Pods-LeagueMobileChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallengeTests/Pods-LeagueMobileChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		09417A2435F74B6BBD872D0B /* Pods_LeagueMobileChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueMobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11B8BED4C0B2E47F947C8F53 /* Pods-LeagueMobileChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallengeTests/Pods-LeagueMobileChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		595D5CA22853A839008E33AB /* CallbackNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallbackNetworkLayer.swift; sourceTree = "<group>"; };
 		595D5CA32853A839008E33AB /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		595D5CA42853A839008E33AB /* MockServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockServices.swift; sourceTree = "<group>"; };
@@ -81,13 +74,10 @@
 		595D5CCD2854AF08008E33AB /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		595D5CD12854BB4B008E33AB /* AuthenticationDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDependencies.swift; sourceTree = "<group>"; };
 		595D5CD32854C0B2008E33AB /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
-		71E420C2560A70D44F192FFD /* Pods-LeagueMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		9E973EA07DC680BB29B1002A /* Pods_LeagueMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE17B652112E8ACDBCA2682C /* Pods-LeagueMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallengeUITests/Pods-LeagueMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5EC5EC130097654F1E0F3C6 /* Pods_LeagueMobileChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeagueMobileChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AC694B21E6578D0094A9B1 /* LeagueMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeagueMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AC694E21E6578D0094A9B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6AC695321E6578D0094A9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6AC695821E6578F0094A9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6AC695B21E6578F0094A9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6AC695D21E6578F0094A9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,8 +87,6 @@
 		B6AC696D21E6578F0094A9B1 /* LeagueMobileChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeagueMobileChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AC697121E6578F0094A9B1 /* LeagueMobileChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueMobileChallengeUITests.swift; sourceTree = "<group>"; };
 		B6AC697321E6578F0094A9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6AC69A121ECEC740094A9B1 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
-		D938A729EC8AE9651EAE0B00 /* Pods-LeagueMobileChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeagueMobileChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C711E601661AAB36D173F831 /* Pods_LeagueMobileChallenge.framework in Frameworks */,
+				59A959F02854C9BD00F5F898 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A864FF656992546AD7C544F /* Pods_LeagueMobileChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,26 +109,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD7C54FA60BB7570A693C71 /* Pods_LeagueMobileChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		281D10CF534B22485FB8D3D4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				71E420C2560A70D44F192FFD /* Pods-LeagueMobileChallenge.debug.xcconfig */,
-				D938A729EC8AE9651EAE0B00 /* Pods-LeagueMobileChallenge.release.xcconfig */,
-				11B8BED4C0B2E47F947C8F53 /* Pods-LeagueMobileChallengeTests.debug.xcconfig */,
-				07D03E3F1912927AD466BF81 /* Pods-LeagueMobileChallengeTests.release.xcconfig */,
-				02F12A77B173DEFEAE495835 /* Pods-LeagueMobileChallengeUITests.debug.xcconfig */,
-				AE17B652112E8ACDBCA2682C /* Pods-LeagueMobileChallengeUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		40816A92C89E63A0A9F413CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,7 +238,6 @@
 				B6AC696521E6578F0094A9B1 /* LeagueMobileChallengeTests */,
 				B6AC697021E6578F0094A9B1 /* LeagueMobileChallengeUITests */,
 				B6AC694C21E6578D0094A9B1 /* Products */,
-				281D10CF534B22485FB8D3D4 /* Pods */,
 				40816A92C89E63A0A9F413CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -285,8 +257,6 @@
 			children = (
 				595D5CA02853A80B008E33AB /* Source */,
 				B6AC694E21E6578D0094A9B1 /* AppDelegate.swift */,
-				B6AC69A121ECEC740094A9B1 /* APIController.swift */,
-				B6AC695221E6578D0094A9B1 /* Main.storyboard */,
 				B6AC695821E6578F0094A9B1 /* Assets.xcassets */,
 				B6AC695A21E6578F0094A9B1 /* LaunchScreen.storyboard */,
 				B6AC695D21E6578F0094A9B1 /* Info.plist */,
@@ -320,17 +290,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6AC697621E6578F0094A9B1 /* Build configuration list for PBXNativeTarget "LeagueMobileChallenge" */;
 			buildPhases = (
-				CDC54F9CFAE4C582D5BF82CE /* [CP] Check Pods Manifest.lock */,
 				B6AC694721E6578D0094A9B1 /* Sources */,
 				B6AC694821E6578D0094A9B1 /* Frameworks */,
 				B6AC694921E6578D0094A9B1 /* Resources */,
-				F517B11D1366B1EAB8D39D70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LeagueMobileChallenge;
+			packageProductDependencies = (
+				59A959EF2854C9BD00F5F898 /* CachedAsyncImage */,
+			);
 			productName = LeagueMobileChallenge;
 			productReference = B6AC694B21E6578D0094A9B1 /* LeagueMobileChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -339,7 +310,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6AC697921E6578F0094A9B1 /* Build configuration list for PBXNativeTarget "LeagueMobileChallengeTests" */;
 			buildPhases = (
-				1107E6DDE85CEEBE5CB72C52 /* [CP] Check Pods Manifest.lock */,
 				B6AC695E21E6578F0094A9B1 /* Sources */,
 				B6AC695F21E6578F0094A9B1 /* Frameworks */,
 				B6AC696021E6578F0094A9B1 /* Resources */,
@@ -358,7 +328,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6AC697C21E6578F0094A9B1 /* Build configuration list for PBXNativeTarget "LeagueMobileChallengeUITests" */;
 			buildPhases = (
-				BDA280367187E8C9B777DA13 /* [CP] Check Pods Manifest.lock */,
 				B6AC696921E6578F0094A9B1 /* Sources */,
 				B6AC696A21E6578F0094A9B1 /* Frameworks */,
 				B6AC696B21E6578F0094A9B1 /* Resources */,
@@ -405,6 +374,9 @@
 				Base,
 			);
 			mainGroup = B6AC694221E6578D0094A9B1;
+			packageReferences = (
+				59A959EE2854C9BD00F5F898 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = B6AC694C21E6578D0094A9B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,7 +395,6 @@
 			files = (
 				B6AC695C21E6578F0094A9B1 /* LaunchScreen.storyboard in Resources */,
 				B6AC695921E6578F0094A9B1 /* Assets.xcassets in Resources */,
-				B6AC695421E6578D0094A9B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,99 +414,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1107E6DDE85CEEBE5CB72C52 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LeagueMobileChallengeTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BDA280367187E8C9B777DA13 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LeagueMobileChallengeUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CDC54F9CFAE4C582D5BF82CE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LeagueMobileChallenge-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F517B11D1366B1EAB8D39D70 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeagueMobileChallenge/Pods-LeagueMobileChallenge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		B6AC694721E6578D0094A9B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -554,7 +432,6 @@
 				595D5CC82853C6D6008E33AB /* UserService.swift in Sources */,
 				595D5CB22853A839008E33AB /* PostView.swift in Sources */,
 				595D5CC62853C559008E33AB /* UserDependencies.swift in Sources */,
-				B6AC69A221ECEC740094A9B1 /* APIController.swift in Sources */,
 				595D5CBD2853A857008E33AB /* AvatarConfig.swift in Sources */,
 				595D5CBE2853A857008E33AB /* AvatarView.swift in Sources */,
 				595D5CC02853A874008E33AB /* LeagueMobileApp.swift in Sources */,
@@ -598,14 +475,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B6AC695221E6578D0094A9B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6AC695321E6578D0094A9B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6AC695A21E6578F0094A9B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -735,7 +604,6 @@
 		};
 		B6AC697721E6578F0094A9B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71E420C2560A70D44F192FFD /* Pods-LeagueMobileChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -754,7 +622,6 @@
 		};
 		B6AC697821E6578F0094A9B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D938A729EC8AE9651EAE0B00 /* Pods-LeagueMobileChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -773,7 +640,6 @@
 		};
 		B6AC697A21E6578F0094A9B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11B8BED4C0B2E47F947C8F53 /* Pods-LeagueMobileChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -795,7 +661,6 @@
 		};
 		B6AC697B21E6578F0094A9B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07D03E3F1912927AD466BF81 /* Pods-LeagueMobileChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -817,7 +682,6 @@
 		};
 		B6AC697D21E6578F0094A9B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02F12A77B173DEFEAE495835 /* Pods-LeagueMobileChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -838,7 +702,6 @@
 		};
 		B6AC697E21E6578F0094A9B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE17B652112E8ACDBCA2682C /* Pods-LeagueMobileChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -897,6 +760,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59A959EE2854C9BD00F5F898 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59A959EF2854C9BD00F5F898 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59A959EE2854C9BD00F5F898 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6AC694321E6578D0094A9B1 /* Project object */;
 }
